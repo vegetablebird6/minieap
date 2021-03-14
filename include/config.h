@@ -83,6 +83,14 @@ typedef struct _prog_config {
      */
     char* logfile;
     #define DEFAULT_LOGFILE "/var/log/minieap.log"
+    
+    /*
+     * Event script
+     * Run this script at events.
+     * Currently only at auth success.
+     */
+    char* script;
+    #define DEFAULT_SCRIPT ""
 
     /*
      * Selected interface implementation: how to drive network adapters?
